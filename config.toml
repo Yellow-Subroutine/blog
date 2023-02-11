@@ -1,0 +1,76 @@
+baseurl = "http://localhost:1313/"
+languageCode = "en-us"
+Title = "Yellow Subroutine"
+#theme="hugo_theme_pickles"
+theme="anatole"
+publishdir="docs"
+
+# Google Analytics API key.
+googleAnalytics = "Your Google Analytics tracking id"
+
+[frontmatter]
+  date = ['date', 'publishDate', 'lastmod']
+  expiryDate = ['expiryDate']
+  lastmod = ['lastmod']
+  publishDate = ['publishDate', 'date']
+
+
+[params]
+profilePicture = "images/profile.png"
+description = "Yellow Subroutine\nposts about stuff"
+hideModifiedDate=true
+favicon = "/images/"
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 4
+
+[[menu.main]]
+    name = "Categories"
+    url = "/categories"
+    weight = 5
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 6
+
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 7
+
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = false
+
+  [[related.indices]]
+  name = "keywords"
+  weight = 150
+  [[related.indices]]
+  name  = "author"
+  toLower = true
+  weight = 30
+  [[related.indices]]
+  name  = "tags"
+  weight = 100
+  [[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2017"
+
+
+[markup]
+  [markup.highlight]
+    style = 'abap'
+    noClasses = false
+
+[outputs]
+  home = ["HTML", "RSS"]

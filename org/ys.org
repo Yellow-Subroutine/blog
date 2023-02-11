@@ -1,0 +1,33 @@
+#+STARTUP: logdone
+#+HUGO_SECTION: posts
+#+HUGO_BASE_DIR: ../
+#+HUGO_WEIGHT: 0
+
+* My first posts
+:PROPERTIES:
+:EXPORT_FILE_NAME: 1st
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :summary Writing hugo post in Emacs org.
+:END:
+blah blah
+
+* My 2nd  posts
+:PROPERTIES:
+:EXPORT_FILE_NAME: 2nd
+:END:
+
+blah blah again
+
+
+
+
+* DONE My 3rd  post
+CLOSED: [2023-01-25 Wed 19:21]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 3rd
+:END:
+
+blah blah yet again
+
+
+
+
